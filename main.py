@@ -4,7 +4,7 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 from func_bot import fetch_vacancies
 
 # The bot's token
-bot = telebot.TeleBot('7294154285:AAFNdHIWUAzup8ZX37-_vBPKulDXF7o9PXM')
+bot = telebot.TeleBot('TOKEN')
 
 # Dictionary to keep track of user states (current page)
 user_states = {}
