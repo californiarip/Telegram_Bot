@@ -2,9 +2,16 @@ import telebot
 from telebot import types
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 from func_bot import fetch_vacancies
+from dotenv import load_dotenv
+import os
 
-# The bot's token
-bot = telebot.TeleBot('TOKEN')
+load_dotenv()
+
+# Get the token from the environment variables
+token = os.getenv('TOKEN')
+
+# Initialize the bot with the token
+bot = telebot.TeleBot(token)
 
 # Dictionary to keep track of user states (current page)
 user_states = {}
